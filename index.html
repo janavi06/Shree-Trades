@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shree Trader</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        /* Custom Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .hero-section {
+            background-image: url('https://via.placeholder.com/1600x600');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 80px 0;
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .hero-section p {
+            font-size: 1.2rem;
+            margin-top: 15px;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .section-subtitle {
+            color: #555;
+            margin-bottom: 30px;
+            font-size: 1.2rem;
+        }
+
+        /* Company Profile Section Styles */
+        .company-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .company-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .company-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .company-card h3 {
+            margin-top: 20px;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        .company-card p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        /* Hover effect for the cards */
+        .company-card {
+            animation: fadeInUp 0.5s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Product Cards Styling */
+        .product-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px; /* Adjust the gap between the cards */
+            
+    width: 500px;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        .add-to-cart-button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .add-to-cart-button:hover {
+            background-color: #555;
+        }
+
+        .section-title {
+            text-align: center;
+        }
+
+        p {
+    line-height: 1.9; /* Adjust the value as needed */
+}
+
+.section-subtitle {
+    margin-bottom: 95px;
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Shree Trader</a>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="investor.html">Investor</a></li>
+                        <li class="nav-item"><a class="nav-link " href="contactus.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <h1>Welcome to Shree Trader</h1>
+        <p>Empowering lives with exceptional products and services</p>
+    </div>
+
+    <!-- Company Profile Section -->
+    <div class="container my-5">
+        <h2 class="section-title">Company Profile</h2>
+        <p class="section-subtitle text-center">SHREE TRADES founded on the principle of changing lives through its remarkable
+            products, proven compensation plan, and charitable programs, the company has been delivering
+            its promise for more than a decade now, as the results speak for themselves. <br>
+            With extensive experience as network leaders, their innovative spirit and visionary leadership
+            , its Board of Directors have taken SHREE TRADES from a simple local organization to an
+            international enterprise and major industry-player that has improved the lives of
+            millions. It leads the industry with its stable business model and international growth
+            opportunities. Because of its exceptional growth and exemplary attributes in conducting
+            business, it has been recognized by several award-giving bodies from the business sector.
+            SHREE TRADES continuously innovates and improves to meet industry
+            expectations and standards. <br>
+            SHREE TRADES has poised itself to match the growing challenges in the market today by improving its
+            infrastructure, adapting new technologies, satisfying distributors and customers' needs, and training network
+            leaders for its growing international expansion. <br>
+            Indeed, a remarkable character of a strong and stable company with a long-term
+            vision built on a firm foundation..</p>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <!-- Leadership Card -->
+            <div class="col">
+                <div class="company-card">
+                    <h3>Leadership</h3>
+                    <p>Led by a visionary team of experts, Shree Trader’s leadership continues to drive the company towards new horizons of growth, global recognition, and success.</p>
+                </div>
+            </div>
+
+            <!-- Innovation Card -->
+            <div class="col">
+                <div class="company-card">
+                    
+                    <h3>Innovation</h3>
+                    <p>Our innovative approach to business ensures that we stay ahead of industry trends, leveraging the latest technologies to deliver cutting-edge solutions to our customers.</p>
+                </div>
+            </div>
+
+            <!-- Global Expansion Card -->
+            <div class="col">
+                <div class="company-card">
+                    
+                    <h3>Global Expansion</h3>
+                    <p>With a strong foundation, Shree Trader is expanding its operations globally, opening new opportunities in emerging markets and creating a global presence for sustainable growth.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Section -->
+    <div class="container my-5">
+        <h2 class="section-title text-center">Our Products</h2>
+        <p class="section-subtitle text-center">Explore our range of high-quality products designed for your well-being.</p>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <!-- Razor Product Card -->
+            <div class="col">
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Razor" class="product-image">
+                    <div class="p-4">
+                        <h3>Razor</h3>
+                        <p>High-quality razor for a perfect shave.</p>
+                        <p class="price">₹299</p>
+                        <button class="add-to-cart-button" onclick="addToCart('Razor', 299)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sanitary Pad Product Card -->
+            <div class="col ms-auto">
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Sanitary Pad" class="product-image">
+                    <div class="p-4">
+                        <h3>Sanitary Pad</h3>
+                        <p>Soothing and comfy for your comfort.</p>
+                        <p class="price">₹149</p>
+                        <button class="add-to-cart-button" onclick="addToCart('Sanitary Pad', 149)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Shree Trader. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
